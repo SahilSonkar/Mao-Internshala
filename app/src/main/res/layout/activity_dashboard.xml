@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="welcome to the home screen"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:padding="25dp"
+        android:layout_centerInParent="true"
+     />
+
+    <LinearLayout
+
+        android:id="@+id/lin"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/CustomerSignUp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="#000"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Customer SignUp"/>
+            <TextView
+                android:id="@+id/businessSignUp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Business SignUp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/existshop"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Exist shop"/>
+            <TextView
+                android:id="@+id/businesssSignIn"
+                android:textColor="#fff"
+                android:background="#ff0000"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Business Sign In"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

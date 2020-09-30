@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectYourLocation">
+
+
+    <fragment
+        android:layout_above="@+id/detailsOfLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapAPI"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>/>
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/detailsOfLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/address"/>
+
+        <RadioGroup
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/work"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save and Continue"
+            android:textSize="25dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
